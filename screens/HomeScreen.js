@@ -1,6 +1,6 @@
 import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
-import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity, View, Alert } from 'react-native';
 
 export default function HomeScreen({navigation}) {
 
@@ -19,9 +19,10 @@ export default function HomeScreen({navigation}) {
 }
 
 function handleHelpPress() {
-  WebBrowser.openBrowserAsync(
-    'https://docs.expo.io/versions/latest/get-started/create-a-new-app/#making-your-first-change'
-  );
+  Alert.alert('','Go home and juck off damnass')
+  // WebBrowser.openBrowserAsync(
+  //   'https://docs.expo.io/versions/latest/get-started/create-a-new-app/#making-your-first-change'
+  // );
 }
 
 const styles = StyleSheet.create({
@@ -36,8 +37,8 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   welcomeImage: {
-    width: 100,
-    height: 80,
+    width: 200,
+    height: 160,
     resizeMode: 'contain',
   },
 });
